@@ -28,7 +28,7 @@ Copy it, open a chat with the betting bot, go set preferences -> set alias for A
 
 ![How to set alias](images/setAlias.png)
 
-Your headless wallet which is now allowed to manage your odds and the betting-bot will respond with a JSON message to any request made by it.
+Your headless wallet is now allowed to manage your odds and the betting-bot will respond with a JSON message to any request made by it.
 
 You can build you odds management application using the sendRequest function present in api.js:
 ```
@@ -43,7 +43,9 @@ sendRequest("getFeedNames", {championship: "NHL"}, {
 ```
 
 The first parameter is the [command](COMMANDS.md)
+
 The second parameter is an object containing parameters (set as null if irrelevant)
+
 The third parameter is an object containing two function as property, ifSuccess is the function that will be executed if a successfull response is made by the bot (the response is passed as parameter), ifFailed is the function that will be executed if the bot returned an error (the error is passed as parameter).
 
 If a request fails, one of these errors is returned:

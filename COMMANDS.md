@@ -1,8 +1,10 @@
-- [getCategories](#getCategories)
-- [getChampionships](#getChampionships)
-- [getFeedNames](#getFeedNames)
-- [getActiveOffers](#getActiveOffers)
-- [getActiveBets](#getActiveBets)
+- [getCategories](#getcategories)
+- [getChampionships](#getchampionships)
+- [getFeedNames](#getfeednames)
+- [getActiveOffers](#getactiveoffers)
+- [getActiveBets](#getactivebets)
+- [setOffer](#setoffer)
+- [removeOffer](#removeoffer)
 
 ## getCategories
 
@@ -114,8 +116,8 @@ Return all championships available
 Return feed names and information about fixtures for a specified sport or championship.
 
 Parameters:
-- cat (optionnal) : filter by sport
-- championship (optionnal, has priority over cat): filter by championship
+- **cat** (optionnal) : filter by sport
+- **championship** (optionnal, has priority over cat): filter by championship
 
 ###### Request
 ```
@@ -271,18 +273,18 @@ Parameters:
 Return your active offers.
 
 Parameters:
-- cat (optionnal) : filter by sport
-- championship (optionnal, has priority over cat): filter by championship
+- **cat** (optionnal) : filter by sport
+- **championship** (optionnal, has priority over cat): filter by championship
 
 Properties returned:
-- odds_1: your odds for home team winning
-- odds_x: your odds for a draw (false if not applicable)
-- odds_2: your odds for away team winning
-- at_stake_odds_1: amount in MB that you lose for home team winning
-- at_stake_odds_x: amount in MB that you lose for a draw (false if not applicable)
-- at_stake_odds_2: amount in MB that you lose for away team winning
-- offer_feedname: feedname for which your offer applies
-- amount_max_set: the amount max in MB that you are willing to risk for this fixture
+- **odds_1**: your odds for home team winning
+- **odds_x**: your odds for a draw (false if not applicable)
+- **odds_2**: your odds for away team winning
+- **at_stake_odds_1**: amount in MB that you lose for home team winning
+- **at_stake_odds_x**: amount in MB that you lose for a draw (false if not applicable)
+- **at_stake_odds_2**: amount in MB that you lose for away team winning
+- **offer_feedname**: feedname for which your offer applies
+- **amount_max_set**: the amount max in MB that you are willing to risk for this fixture
 
 ###### Request
 ```
@@ -330,10 +332,10 @@ Properties returned:
 Return your active bets.
 
 Properties returned:
-- win_condition: data posted by oracle for which the taker wins the bet (in this case you lose as maker)
-- amount_stake: amount in MB put at stake for this bet
-- amount_gain: net gain in MB for you if the win condition doesn't realize
-- feedName: feedname for which this bet applies
+- **win_condition**: data posted by oracle for which the taker wins the bet (in this case you lose as maker)
+- **amount_stake**: amount in MB put at stake for this bet
+- **amount_gain**: net gain in MB for you if the win condition doesn't realize
+- **feed_name**: feedname for which this bet applies
 
 
 ###### Request
@@ -351,7 +353,7 @@ Properties returned:
 	"win_condition": "NICE",
 	"amount_stake": "0.10",
 	"amount_gain": "1.00",
-	"feedName": "NICE_LILLE_2018-03-04"
+	"feed_name": "NICE_LILLE_2018-03-04"
 }]
 ```
 
@@ -360,11 +362,11 @@ Properties returned:
 Set odds offers for a feedname
 
 Parameters:
-- feedName: feedname for which these odds apply
-- odds_1: proposed odds for home team winning
-- odds_x: proposed odds for a draw
-- odds_2: proposed odds for away team winning
-- amount_max: amount max in MB you want to risk on this fixture
+- **feed_name**: feedname for which these odds apply
+- **odds_1**: proposed odds for home team winning
+- **odds_x**: proposed odds for a draw
+- **odds_2**: proposed odds for away team winning
+- **amount_max**: amount max in MB you want to risk on this fixture
 
 ###### Request
 ```
@@ -381,7 +383,7 @@ Parameters:
 Remove odds offers for a feedname
 
 Parameters:
-- feedName: feedname for which you remove offers
+- **feed_name**: feedname for which you remove offers
 
 ###### Request
 
