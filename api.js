@@ -33,7 +33,7 @@ function playWithAPI() {
 	});
 	*/
 	/*
-		sendRequest("getFeedNames", {championship: "NHL"}, {
+	sendRequest("getFeedNames", {championship: "NHL"}, {
 		ifSuccess: function(feedNames) {
 			process.stdout.write("\nCurrent feed names: " + JSON.stringify(feedNames))
 		},
@@ -42,7 +42,7 @@ function playWithAPI() {
 		}
 	});*/
 	/*
-		sendRequest("getActiveOffers", null, {
+	sendRequest("getActiveOffers", null, {
 		ifSuccess: function(offers) {
 			process.stdout.write("\nCurrent active offers: " + JSON.stringify(offers))
 		},
@@ -51,27 +51,19 @@ function playWithAPI() {
 		}
 	});
 	
-		sendRequest("getActiveOffers", null, {
-		ifSuccess: function(offers) {
-			process.stdout.write("\nCurrent active offers: " + JSON.stringify(offers))
-		},
-		ifFailed: function(error) {
-			process.stdout.write("\nFailed to get current offers. Reason:" + error);
-		}
-	});*/
-
+*/
 	/*
-		sendRequest("getActiveBets", null, {
-		ifSuccess: function(offers) {
-			process.stdout.write("\nCurrent active bets: " + JSON.stringify(offers))
+	sendRequest("getActiveBets", null, {
+		ifSuccess: function(bets) {
+			process.stdout.write("\nCurrent active bets: " + JSON.stringify(bets))
 		},
 		ifFailed: function(error) {
 			process.stdout.write("\nFailed to get current bets. Reason:" + error);
 		}
 	});*/
 	/*
-		sendRequest("removeOffer", { feed_name: "CRYSTALPALACE_WESTBROMWICHALBION_2018-05-13"}, {
-		ifSuccess: function(offers) {
+	sendRequest("removeOffer", { feed_name: "CRYSTALPALACE_WESTBROMWICHALBION_2018-05-13"}, {
+		ifSuccess: function() {
 			process.stdout.write("\nOffer removed for CRYSTALPALACE_WESTBROMWICHALBION_2018-05-13")
 		},
 		ifFailed: function(error) {
@@ -79,15 +71,14 @@ function playWithAPI() {
 		}
 		});*/
 	/*
-			sendRequest("setOffer", { feed_name: "CRYSTALPALACE_WESTBROMWICHALBION_2018-05-13", odds_1: 1.2, odds_x:1.3, odds_2: 1.4, amount_max:150 }, {
-			ifSuccess: function(offers) {
-				process.stdout.write("\nOffer placed for CRYSTALPALACE_WESTBROMWICHALBION_2018-05-13")
-			},
-			ifFailed: function(error) {
-				process.stdout.write("\nFailed to place offer for CRYSTALPALACE_WESTBROMWICHALBION_2018-05-13, reason:" + error);
-			}
-			});*/
-
+	sendRequest("setOffer", { feed_name: "CRYSTALPALACE_WESTBROMWICHALBION_2018-05-13", odds_1: 1.2, odds_x:1.3, odds_2: 1.4, amount_max:150 }, {
+		ifSuccess: function() {
+			process.stdout.write("\nOffer placed for CRYSTALPALACE_WESTBROMWICHALBION_2018-05-13")
+		},
+		ifFailed: function(error) {
+			process.stdout.write("\nFailed to place offer for CRYSTALPALACE_WESTBROMWICHALBION_2018-05-13, reason:" + error);
+		}
+		});*/
 
 }
 
