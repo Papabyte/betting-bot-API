@@ -114,7 +114,7 @@ eventBus.on('text', function(from_address, text) {
 		try {
 			var objReceived = JSON.parse(text);
 		} catch (e) {
-			process.stdout.write(("\Invalid JSON received:\n" + text + "\nerror: " + e));
+			return process.stdout.write(("\Invalid JSON received:\n" + text + "\nerror: " + e));
 		}
 
 		if (objReceived[0] == "response" && objReceived[1].tag && assocRequestsSent[objReceived[1].tag]) {
