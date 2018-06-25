@@ -1,10 +1,12 @@
-- [getCategories](#getCategories)
-- [getChampionships](#getChampionships)
-- [getFeedNames](#getFeedNames)
-- [getActiveOffers](#getActiveOffers)
-- [getActiveBets](#getActiveBets)
-- [getBestOdds](#getBestOdds)
-- [getLastBets](#getLastBets)
+-- [getCategories](#getcategories)
+-- [getChampionships](#getchampionships)
+-- [getFeedNames](#getfeednames)
+-- [getActiveOffers](#getactiveoffers)
+-- [getActiveBets](#getactivebets)
+-- [setOffer](#setoffer)
+-- [removeOffer](#removeoffer)
+-- [getBestOdds](#getBestOdds)
+-- [getLastBets](#getLastBets)
 
 
 ## getCategories
@@ -117,8 +119,8 @@ Return all championships available
 Return feed names and information about fixtures for a specified sport or championship.
 
 Parameters:
-- cat (optionnal) : filter by sport
-- championship (optionnal, has priority over cat): filter by championship
+- **cat** (optionnal) : filter by sport
+- **championship** (optionnal, has priority over cat): filter by championship
 
 ###### Request
 ```
@@ -202,8 +204,8 @@ Parameters:
 Return your active offers.
 
 Parameters:
-- cat (optionnal) : filter by sport
-- championship (optionnal, has priority over cat): filter by championship
+- **cat** (optionnal) : filter by sport
+- **championship** (optionnal, has priority over cat): filter by championship
 
 Properties returned:
 - odds_1: your odds for home team winning
@@ -261,10 +263,10 @@ Properties returned:
 Return your active bets.
 
 Properties returned:
-- win_condition: data posted by oracle for which the taker wins the bet (in this case you lose as maker)
-- amount_stake: amount in MB put at stake for this bet
-- amount_gain: net gain in MB for you if the win condition doesn't realize
-- feedName: feedname for which this bet applies
+- **win_condition**: data posted by oracle for which the taker wins the bet (in this case you lose as maker)
+- **amount_stake**: amount in MB put at stake for this bet
+- **amount_gain**: net gain in MB for you if the win condition doesn't realize
+- **feedName**: feedname for which this bet applies
 
 
 ###### Request
@@ -291,11 +293,11 @@ Properties returned:
 Set odds offers for a feedname
 
 Parameters:
-- feedName: feedname for which these odds apply
-- odds_1: proposed odds for home team winning
-- odds_x: proposed odds for a draw
-- odds_2: proposed odds for away team winning
-- amount_max: amount max in MB you want to risk on this fixture
+- **feedName**: feedname for which these odds apply
+- **odds_1**: proposed odds for home team winning
+- **odds_x**: proposed odds for a draw
+- **odds_2**: proposed odds for away team winning
+- **amount_max**: amount max in MB you want to risk on this fixture
 
 ###### Request
 ```
@@ -326,7 +328,7 @@ Parameters:
 Remove odds offers for a feedname
 
 Parameters:
-- feedName: feedname for which you remove offers
+- **feedName**: feedname for which you remove offers
 
 ###### Request
 ```
@@ -354,14 +356,14 @@ Parameters:
 Get best odds available for upcoming fixtures
 
 Parameters:
-- filter: categorie for which you want to get best odds, odds for all categories are returned if null
+- **filter**: categorie for which you want to get best odds, odds for all categories are returned if null
 
 Properties returned:
-- odds_1: best odds for home team winning
-- odds_x: best odds for a draw (false if not applicable)
-- odds_2: best odds for away team winning
-- offer_feedname: feedname for which your offer applies
-- amount_max_set: the amount max in MB that you are willing to risk for this fixture
+- **odds_1**: best odds for home team winning
+- **odds_x**: best odds for a draw (false if not applicable)
+- **odds_2**: best odds for away team winning
+- **offer_feedname**: feedname for which your offer applies
+- **amount_max_set**: the amount max in MB that you are willing to risk for this fixture
 
 ###### Request
 ```
@@ -404,13 +406,13 @@ Properties returned:
 Get last bets taken
 
 Parameters:
-- count: number of results to be returned (max 100)
+- **count**: number of results to be returned (max 100)
 
 Properties returned:
 
-- win_condition: data posted by oracle for which the taker wins the bet
-- amount_taker: amount in MB deposited on contract by taker
-- amount_maker: amount in MB deposited on contract by maker
+- **win_condition**: data posted by oracle for which the taker wins the bet
+- **amount_taker**: amount in MB deposited on contract by taker
+- **amount_maker**: amount in MB deposited on contract by maker
 
 
 ###### Request
