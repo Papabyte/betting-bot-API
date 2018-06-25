@@ -76,6 +76,7 @@ If a request fails, one of these errors is returned:
 	23: "Implied probability must be over 100%",
 	24: "Minimum amount is 100MB",
 	25: "Odds must be a number > 1 or 0",
-	26: "No such offer found"
-
+	26: "No such offer found",
+	27: "Parameter must be not null",
+	28: "Filter must be a string"
 ```

@@ -1,10 +1,8 @@
-- [getCategories](#getcategories)
-- [getChampionships](#getchampionships)
-- [getFeedNames](#getfeednames)
-- [getActiveOffers](#getactiveoffers)
-- [getActiveBets](#getactivebets)
-- [setOffer](#setoffer)
-- [removeOffer](#removeoffer)
+- [getCategories](#getCategories)
+- [getChampionships](#getChampionships)
+- [getFeedNames](#getFeedNames)
+- [getActiveOffers](#getActiveOffers)
+- [getActiveBets](#getActiveBets)
 
 ## getCategories
 
@@ -116,8 +114,8 @@ Return all championships available
 Return feed names and information about fixtures for a specified sport or championship.
 
 Parameters:
-- **cat** (optionnal) : filter by sport
-- **championship** (optionnal, has priority over cat): filter by championship
+- cat (optionnal) : filter by sport
+- championship (optionnal, has priority over cat): filter by championship
 
 ###### Request
 ```
@@ -142,7 +140,7 @@ Parameters:
 			"feedHomeTeamName": "NEWORLEANSPELICANS",
 			"feedAwayTeamName": "GOLDENSTATEWARRIORS",
 			"date": "2018-05-06T19:30:00.000Z",
-			"localDay": "2018-05-06T00:00:00.000Z"
+			"localDate": "2018-05-06T00:00:00.000Z"
 		},
 		"UTAHJAZZ_HOUSTONROCKETS_2018-05-06": {
 			"homeTeam": "Utah Jazz",
@@ -150,7 +148,7 @@ Parameters:
 			"feedHomeTeamName": "UTAHJAZZ",
 			"feedAwayTeamName": "HOUSTONROCKETS",
 			"date": "2018-05-07T00:00:00.000Z",
-			"localDay": "2018-05-06T00:00:00.000Z"
+			"localDate": "2018-05-06T00:00:00.000Z"
 		},
 		"PHILADELPHIA76ERS_BOSTONCELTICS_2018-05-07": {
 			"homeTeam": "Philadelphia 76ers",
@@ -158,7 +156,7 @@ Parameters:
 			"feedHomeTeamName": "PHILADELPHIA76ERS",
 			"feedAwayTeamName": "BOSTONCELTICS",
 			"date": "2018-05-07T22:00:00.000Z",
-			"localDay": "2018-05-07T00:00:00.000Z"
+			"localDate": "2018-05-07T00:00:00.000Z"
 		},
 		"CLEVELANDCAVALIERS_TORONTORAPTORS_2018-05-07": {
 			"homeTeam": "Cleveland Cavaliers",
@@ -166,7 +164,7 @@ Parameters:
 			"feedHomeTeamName": "CLEVELANDCAVALIERS",
 			"feedAwayTeamName": "TORONTORAPTORS",
 			"date": "2018-05-08T00:30:00.000Z",
-			"localDay": "2018-05-07T00:00:00.000Z"
+			"localDate": "2018-05-07T00:00:00.000Z"
 		},
 		"HOUSTONROCKETS_UTAHJAZZ_2018-05-08": {
 			"homeTeam": "Houston Rockets",
@@ -174,7 +172,7 @@ Parameters:
 			"feedHomeTeamName": "HOUSTONROCKETS",
 			"feedAwayTeamName": "UTAHJAZZ",
 			"date": "2018-05-09T00:00:00.000Z",
-			"localDay": "2018-05-08T00:00:00.000Z"
+			"localDate": "2018-05-08T00:00:00.000Z"
 		},
 		"GOLDENSTATEWARRIORS_NEWORLEANSPELICANS_2018-05-08": {
 			"homeTeam": "Golden State Warriors",
@@ -182,7 +180,7 @@ Parameters:
 			"feedHomeTeamName": "GOLDENSTATEWARRIORS",
 			"feedAwayTeamName": "NEWORLEANSPELICANS",
 			"date": "2018-05-09T02:30:00.000Z",
-			"localDay": "2018-05-08T00:00:00.000Z"
+			"localDate": "2018-05-08T00:00:00.000Z"
 		},
 		"BOSTONCELTICS_PHILADELPHIA76ERS_2018-05-09": {
 			"homeTeam": "Boston Celtics",
@@ -190,7 +188,7 @@ Parameters:
 			"feedHomeTeamName": "BOSTONCELTICS",
 			"feedAwayTeamName": "PHILADELPHIA76ERS",
 			"date": "2018-05-09T22:00:00.000Z",
-			"localDay": "2018-05-09T00:00:00.000Z"
+			"localDate": "2018-05-09T00:00:00.000Z"
 		},
 		"TORONTORAPTORS_CLEVELANDCAVALIERS_2018-05-09": {
 			"homeTeam": "Toronto Raptors",
@@ -198,7 +196,7 @@ Parameters:
 			"feedHomeTeamName": "TORONTORAPTORS",
 			"feedAwayTeamName": "CLEVELANDCAVALIERS",
 			"date": "2018-05-09T22:00:00.000Z",
-			"localDay": "2018-05-09T00:00:00.000Z"
+			"localDate": "2018-05-09T00:00:00.000Z"
 		},
 		"UTAHJAZZ_HOUSTONROCKETS_2018-05-10": {
 			"homeTeam": "Utah Jazz",
@@ -206,7 +204,7 @@ Parameters:
 			"feedHomeTeamName": "UTAHJAZZ",
 			"feedAwayTeamName": "HOUSTONROCKETS",
 			"date": "2018-05-10T22:00:00.000Z",
-			"localDay": "2018-05-10T00:00:00.000Z"
+			"localDate": "2018-05-10T00:00:00.000Z"
 		},
 		"NEWORLEANSPELICANS_GOLDENSTATEWARRIORS_2018-05-10": {
 			"homeTeam": "New Orleans Pelicans",
@@ -214,7 +212,7 @@ Parameters:
 			"feedHomeTeamName": "NEWORLEANSPELICANS",
 			"feedAwayTeamName": "GOLDENSTATEWARRIORS",
 			"date": "2018-05-10T22:00:00.000Z",
-			"localDay": "2018-05-10T00:00:00.000Z"
+			"localDate": "2018-05-10T00:00:00.000Z"
 		},
 		"CLEVELANDCAVALIERS_TORONTORAPTORS_2018-05-11": {
 			"homeTeam": "Cleveland Cavaliers",
@@ -222,7 +220,7 @@ Parameters:
 			"feedHomeTeamName": "CLEVELANDCAVALIERS",
 			"feedAwayTeamName": "TORONTORAPTORS",
 			"date": "2018-05-11T22:00:00.000Z",
-			"localDay": "2018-05-11T00:00:00.000Z"
+			"localDate": "2018-05-11T00:00:00.000Z"
 		},
 		"PHILADELPHIA76ERS_BOSTONCELTICS_2018-05-11": {
 			"homeTeam": "Philadelphia 76ers",
@@ -230,7 +228,7 @@ Parameters:
 			"feedHomeTeamName": "PHILADELPHIA76ERS",
 			"feedAwayTeamName": "BOSTONCELTICS",
 			"date": "2018-05-11T22:00:00.000Z",
-			"localDay": "2018-05-11T00:00:00.000Z"
+			"localDate": "2018-05-11T00:00:00.000Z"
 		},
 		"TORONTORAPTORS_CLEVELANDCAVALIERS_2018-05-13": {
 			"homeTeam": "Toronto Raptors",
@@ -238,7 +236,7 @@ Parameters:
 			"feedHomeTeamName": "TORONTORAPTORS",
 			"feedAwayTeamName": "CLEVELANDCAVALIERS",
 			"date": "2018-05-13T22:00:00.000Z",
-			"localDay": "2018-05-13T00:00:00.000Z"
+			"localDate": "2018-05-13T00:00:00.000Z"
 		},
 		"BOSTONCELTICS_PHILADELPHIA76ERS_2018-05-13": {
 			"homeTeam": "Boston Celtics",
@@ -246,7 +244,7 @@ Parameters:
 			"feedHomeTeamName": "BOSTONCELTICS",
 			"feedAwayTeamName": "PHILADELPHIA76ERS",
 			"date": "2018-05-13T22:00:00.000Z",
-			"localDay": "2018-05-13T00:00:00.000Z"
+			"localDate": "2018-05-13T00:00:00.000Z"
 		},
 		"HOUSTONROCKETS_UTAHJAZZ_2018-05-14": {
 			"homeTeam": "Houston Rockets",
@@ -254,7 +252,7 @@ Parameters:
 			"feedHomeTeamName": "HOUSTONROCKETS",
 			"feedAwayTeamName": "UTAHJAZZ",
 			"date": "2018-05-14T22:00:00.000Z",
-			"localDay": "2018-05-14T00:00:00.000Z"
+			"localDate": "2018-05-14T00:00:00.000Z"
 		},
 		"GOLDENSTATEWARRIORS_NEWORLEANSPELICANS_2018-05-14": {
 			"homeTeam": "Golden State Warriors",
@@ -262,7 +260,7 @@ Parameters:
 			"feedHomeTeamName": "GOLDENSTATEWARRIORS",
 			"feedAwayTeamName": "NEWORLEANSPELICANS",
 			"date": "2018-05-14T22:00:00.000Z",
-			"localDay": "2018-05-14T00:00:00.000Z"
+			"localDate": "2018-05-14T00:00:00.000Z"
 		}
 	},
 	"tag": "s+y60IHpqDunZFufMHqQBmz2Vh9JdTXnt/1b4+Y0d3k="
@@ -273,18 +271,18 @@ Parameters:
 Return your active offers.
 
 Parameters:
-- **cat** (optionnal) : filter by sport
-- **championship** (optionnal, has priority over cat): filter by championship
+- cat (optionnal) : filter by sport
+- championship (optionnal, has priority over cat): filter by championship
 
 Properties returned:
-- **odds_1**: your odds for home team winning
-- **odds_x**: your odds for a draw (false if not applicable)
-- **odds_2**: your odds for away team winning
-- **at_stake_odds_1**: amount in MB that you lose for home team winning
-- **at_stake_odds_x**: amount in MB that you lose for a draw (false if not applicable)
-- **at_stake_odds_2**: amount in MB that you lose for away team winning
-- **offer_feedname**: feedname for which your offer applies
-- **amount_max_set**: the amount max in MB that you are willing to risk for this fixture
+- odds_1: your odds for home team winning
+- odds_x: your odds for a draw (false if not applicable)
+- odds_2: your odds for away team winning
+- at_stake_odds_1: amount in MB that you lose for home team winning
+- at_stake_odds_x: amount in MB that you lose for a draw (false if not applicable)
+- at_stake_odds_2: amount in MB that you lose for away team winning
+- offer_feedname: feedname for which your offer applies
+- amount_max_set: the amount max in MB that you are willing to risk for this fixture
 
 ###### Request
 ```
@@ -332,10 +330,10 @@ Properties returned:
 Return your active bets.
 
 Properties returned:
-- **win_condition**: data posted by oracle for which the taker wins the bet (in this case you lose as maker)
-- **amount_stake**: amount in MB put at stake for this bet
-- **amount_gain**: net gain in MB for you if the win condition doesn't realize
-- **feed_name**: feedname for which this bet applies
+- win_condition: data posted by oracle for which the taker wins the bet (in this case you lose as maker)
+- amount_stake: amount in MB put at stake for this bet
+- amount_gain: net gain in MB for you if the win condition doesn't realize
+- feedName: feedname for which this bet applies
 
 
 ###### Request
@@ -353,7 +351,7 @@ Properties returned:
 	"win_condition": "NICE",
 	"amount_stake": "0.10",
 	"amount_gain": "1.00",
-	"feed_name": "NICE_LILLE_2018-03-04"
+	"feedName": "NICE_LILLE_2018-03-04"
 }]
 ```
 
@@ -362,20 +360,34 @@ Properties returned:
 Set odds offers for a feedname
 
 Parameters:
-- **feed_name**: feedname for which these odds apply
-- **odds_1**: proposed odds for home team winning
-- **odds_x**: proposed odds for a draw
-- **odds_2**: proposed odds for away team winning
-- **amount_max**: amount max in MB you want to risk on this fixture
+- feedName: feedname for which these odds apply
+- odds_1: proposed odds for home team winning
+- odds_x: proposed odds for a draw
+- odds_2: proposed odds for away team winning
+- amount_max: amount max in MB you want to risk on this fixture
 
 ###### Request
 ```
-["request",{"command":"setOffer","params":{"feed_name":"CRYSTALPALACE_WESTBROMWICHALBION_2018-05-13","odds_1":1.2,"odds_x":1.3,"odds_2":1.4,"amount_max":150},"time_limit":1525929636,"tag":"n5AgEpSxUf+W5aDyeXsxDafYv7OcZSczyg92y8pCaCg="}]
+["request", {
+	"command": "setOffer",
+	"params": {
+		"feed_name": "CRYSTALPALACE_WESTBROMWICHALBION_2018-05-13",
+		"odds_1": 1.2,
+		"odds_x": 1.3,
+		"odds_2": 1.4,
+		"amount_max": 150
+	},
+	"time_limit": 1525929636,
+	"tag": "n5AgEpSxUf+W5aDyeXsxDafYv7OcZSczyg92y8pCaCg="
+}]
 ```
 
 ###### Response
 ```
-["response",{"is_successful":true,"tag":"n5AgEpSxUf+W5aDyeXsxDafYv7OcZSczyg92y8pCaCg="}]
+["response", {
+	"is_successful": true,
+	"tag": "n5AgEpSxUf+W5aDyeXsxDafYv7OcZSczyg92y8pCaCg="
+}]
 ```
 
 ## removeOffer
@@ -383,15 +395,68 @@ Parameters:
 Remove odds offers for a feedname
 
 Parameters:
-- **feed_name**: feedname for which you remove offers
+- feedName: feedname for which you remove offers
 
 ###### Request
-
 ```
-["request",{"command":"removeOffer","params":{"feed_name":"CRYSTALPALACE_WESTBROMWICHALBION_2018-05-13"},"time_limit":1525934502,"tag":"ily5YQPWj9Zhsmn743y9+pR0Z3aFjsGPBxgzDqVb6n8="}]
+["request", {
+	"command": "removeOffer",
+	"params": {
+		"feed_name": "CRYSTALPALACE_WESTBROMWICHALBION_2018-05-13"
+	},
+	"time_limit": 1525934502,
+	"tag": "ily5YQPWj9Zhsmn743y9+pR0Z3aFjsGPBxgzDqVb6n8="
+}]
 ```
 
 ###### Response
 ```
-["response",{"is_successful":true,"tag":"ily5YQPWj9Zhsmn743y9+pR0Z3aFjsGPBxgzDqVb6n8="}]
+["response", {
+	"is_successful": true,
+	"tag": "ily5YQPWj9Zhsmn743y9+pR0Z3aFjsGPBxgzDqVb6n8="
+}]
+```
+
+
+## getBestOdds
+
+Get best odds available for upcoming fixtures
+
+Parameters:
+- filter: categorie for which you want to get best odds, odds for all categories are returned if null
+
+###### Request
+```
+["request", {
+	"command": "getBestOdds",
+	"params": {
+		"filter": "soccer"
+	},
+	"time_limit": 1529922786,
+	"tag": "NF1tVuMzTxmohANZj1Cp/3GOzhgj3zOjTxqRVieCjLk="
+}]
+```
+
+###### Response
+```
+{
+	"SAUDIARABIA_EGYPT_2018-06-25": {
+		"homeTeam": "Saudi Arabia",
+		"awayTeam": "Egypt",
+		"date": "2018-06-25 14:00:00",
+		"localDay": "2018-06-25T14:00:00.000Z",
+		"odds_1": 5.5,
+		"odds_x": 3.5,
+		"odds_2": 1.8
+	},
+	"URUGUAY_RUSSIA_2018-06-25": {
+		"homeTeam": "Uruguay",
+		"awayTeam": "Russia",
+		"date": "2018-06-25 14:00:00",
+		"localDay": "2018-06-25T14:00:00.000Z",
+		"odds_1": 2.6,
+		"odds_x": 3,
+		"odds_2": 2.8
+	}
+}
 ```
