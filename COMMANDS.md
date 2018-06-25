@@ -1,12 +1,12 @@
--- [getCategories](#getcategories)
--- [getChampionships](#getchampionships)
--- [getFeedNames](#getfeednames)
--- [getActiveOffers](#getactiveoffers)
--- [getActiveBets](#getactivebets)
--- [setOffer](#setoffer)
--- [removeOffer](#removeoffer)
--- [getBestOdds](#getBestOdds)
--- [getLastBets](#getLastBets)
+- [getCategories](#getcategories)
+- [getChampionships](#getchampionships)
+- [getFeedNames](#getfeednames)
+- [getActiveOffers](#getactiveoffers)
+- [getActiveBets](#getactivebets)
+- [setOffer](#setoffer)
+- [removeOffer](#removeoffer)
+- [getBestOdds](#getbestodds)
+- [getLastBets](#getlastbets)
 
 
 ## getCategories
