@@ -143,7 +143,7 @@ Parameters:
 			"feedHomeTeamName": "NEWORLEANSPELICANS",
 			"feedAwayTeamName": "GOLDENSTATEWARRIORS",
 			"date": "2018-05-06T19:30:00.000Z",
-			"localDate": "2018-05-06T00:00:00.000Z"
+			"localDay": "2018-05-06T00:00:00.000Z"
 		},
 		"UTAHJAZZ_HOUSTONROCKETS_2018-05-06": {
 			"homeTeam": "Utah Jazz",
@@ -151,7 +151,7 @@ Parameters:
 			"feedHomeTeamName": "UTAHJAZZ",
 			"feedAwayTeamName": "HOUSTONROCKETS",
 			"date": "2018-05-07T00:00:00.000Z",
-			"localDate": "2018-05-06T00:00:00.000Z"
+			"localDay": "2018-05-06T00:00:00.000Z"
 		},
 		"PHILADELPHIA76ERS_BOSTONCELTICS_2018-05-07": {
 			"homeTeam": "Philadelphia 76ers",
@@ -159,7 +159,7 @@ Parameters:
 			"feedHomeTeamName": "PHILADELPHIA76ERS",
 			"feedAwayTeamName": "BOSTONCELTICS",
 			"date": "2018-05-07T22:00:00.000Z",
-			"localDate": "2018-05-07T00:00:00.000Z"
+			"localDay": "2018-05-07T00:00:00.000Z"
 		},
 		"CLEVELANDCAVALIERS_TORONTORAPTORS_2018-05-07": {
 			"homeTeam": "Cleveland Cavaliers",
@@ -167,7 +167,7 @@ Parameters:
 			"feedHomeTeamName": "CLEVELANDCAVALIERS",
 			"feedAwayTeamName": "TORONTORAPTORS",
 			"date": "2018-05-08T00:30:00.000Z",
-			"localDate": "2018-05-07T00:00:00.000Z"
+			"localDay": "2018-05-07T00:00:00.000Z"
 		},
 		"HOUSTONROCKETS_UTAHJAZZ_2018-05-08": {
 			"homeTeam": "Houston Rockets",
@@ -175,7 +175,7 @@ Parameters:
 			"feedHomeTeamName": "HOUSTONROCKETS",
 			"feedAwayTeamName": "UTAHJAZZ",
 			"date": "2018-05-09T00:00:00.000Z",
-			"localDate": "2018-05-08T00:00:00.000Z"
+			"localDay": "2018-05-08T00:00:00.000Z"
 		},
 		"GOLDENSTATEWARRIORS_NEWORLEANSPELICANS_2018-05-08": {
 			"homeTeam": "Golden State Warriors",
@@ -183,7 +183,7 @@ Parameters:
 			"feedHomeTeamName": "GOLDENSTATEWARRIORS",
 			"feedAwayTeamName": "NEWORLEANSPELICANS",
 			"date": "2018-05-09T02:30:00.000Z",
-			"localDate": "2018-05-08T00:00:00.000Z"
+			"localDay": "2018-05-08T00:00:00.000Z"
 		},
 		"BOSTONCELTICS_PHILADELPHIA76ERS_2018-05-09": {
 			"homeTeam": "Boston Celtics",
@@ -191,79 +191,7 @@ Parameters:
 			"feedHomeTeamName": "BOSTONCELTICS",
 			"feedAwayTeamName": "PHILADELPHIA76ERS",
 			"date": "2018-05-09T22:00:00.000Z",
-			"localDate": "2018-05-09T00:00:00.000Z"
-		},
-		"TORONTORAPTORS_CLEVELANDCAVALIERS_2018-05-09": {
-			"homeTeam": "Toronto Raptors",
-			"awayTeam": "Cleveland Cavaliers",
-			"feedHomeTeamName": "TORONTORAPTORS",
-			"feedAwayTeamName": "CLEVELANDCAVALIERS",
-			"date": "2018-05-09T22:00:00.000Z",
-			"localDate": "2018-05-09T00:00:00.000Z"
-		},
-		"UTAHJAZZ_HOUSTONROCKETS_2018-05-10": {
-			"homeTeam": "Utah Jazz",
-			"awayTeam": "Houston Rockets",
-			"feedHomeTeamName": "UTAHJAZZ",
-			"feedAwayTeamName": "HOUSTONROCKETS",
-			"date": "2018-05-10T22:00:00.000Z",
-			"localDate": "2018-05-10T00:00:00.000Z"
-		},
-		"NEWORLEANSPELICANS_GOLDENSTATEWARRIORS_2018-05-10": {
-			"homeTeam": "New Orleans Pelicans",
-			"awayTeam": "Golden State Warriors",
-			"feedHomeTeamName": "NEWORLEANSPELICANS",
-			"feedAwayTeamName": "GOLDENSTATEWARRIORS",
-			"date": "2018-05-10T22:00:00.000Z",
-			"localDate": "2018-05-10T00:00:00.000Z"
-		},
-		"CLEVELANDCAVALIERS_TORONTORAPTORS_2018-05-11": {
-			"homeTeam": "Cleveland Cavaliers",
-			"awayTeam": "Toronto Raptors",
-			"feedHomeTeamName": "CLEVELANDCAVALIERS",
-			"feedAwayTeamName": "TORONTORAPTORS",
-			"date": "2018-05-11T22:00:00.000Z",
-			"localDate": "2018-05-11T00:00:00.000Z"
-		},
-		"PHILADELPHIA76ERS_BOSTONCELTICS_2018-05-11": {
-			"homeTeam": "Philadelphia 76ers",
-			"awayTeam": "Boston Celtics",
-			"feedHomeTeamName": "PHILADELPHIA76ERS",
-			"feedAwayTeamName": "BOSTONCELTICS",
-			"date": "2018-05-11T22:00:00.000Z",
-			"localDate": "2018-05-11T00:00:00.000Z"
-		},
-		"TORONTORAPTORS_CLEVELANDCAVALIERS_2018-05-13": {
-			"homeTeam": "Toronto Raptors",
-			"awayTeam": "Cleveland Cavaliers",
-			"feedHomeTeamName": "TORONTORAPTORS",
-			"feedAwayTeamName": "CLEVELANDCAVALIERS",
-			"date": "2018-05-13T22:00:00.000Z",
-			"localDate": "2018-05-13T00:00:00.000Z"
-		},
-		"BOSTONCELTICS_PHILADELPHIA76ERS_2018-05-13": {
-			"homeTeam": "Boston Celtics",
-			"awayTeam": "Philadelphia 76ers",
-			"feedHomeTeamName": "BOSTONCELTICS",
-			"feedAwayTeamName": "PHILADELPHIA76ERS",
-			"date": "2018-05-13T22:00:00.000Z",
-			"localDate": "2018-05-13T00:00:00.000Z"
-		},
-		"HOUSTONROCKETS_UTAHJAZZ_2018-05-14": {
-			"homeTeam": "Houston Rockets",
-			"awayTeam": "Utah Jazz",
-			"feedHomeTeamName": "HOUSTONROCKETS",
-			"feedAwayTeamName": "UTAHJAZZ",
-			"date": "2018-05-14T22:00:00.000Z",
-			"localDate": "2018-05-14T00:00:00.000Z"
-		},
-		"GOLDENSTATEWARRIORS_NEWORLEANSPELICANS_2018-05-14": {
-			"homeTeam": "Golden State Warriors",
-			"awayTeam": "New Orleans Pelicans",
-			"feedHomeTeamName": "GOLDENSTATEWARRIORS",
-			"feedAwayTeamName": "NEWORLEANSPELICANS",
-			"date": "2018-05-14T22:00:00.000Z",
-			"localDate": "2018-05-14T00:00:00.000Z"
+			"localDay": "2018-05-09T00:00:00.000Z"
 		}
 	},
 	"tag": "s+y60IHpqDunZFufMHqQBmz2Vh9JdTXnt/1b4+Y0d3k="
@@ -428,6 +356,13 @@ Get best odds available for upcoming fixtures
 Parameters:
 - filter: categorie for which you want to get best odds, odds for all categories are returned if null
 
+Properties returned:
+- odds_1: best odds for home team winning
+- odds_x: best odds for a draw (false if not applicable)
+- odds_2: best odds for away team winning
+- offer_feedname: feedname for which your offer applies
+- amount_max_set: the amount max in MB that you are willing to risk for this fixture
+
 ###### Request
 ```
 ["request", {
@@ -470,6 +405,13 @@ Get last bets taken
 
 Parameters:
 - count: number of results to be returned (max 100)
+
+Properties returned:
+
+- win_condition: data posted by oracle for which the taker wins the bet
+- amount_taker: amount in MB deposited on contract by taker
+- amount_maker: amount in MB deposited on contract by maker
+
 
 ###### Request
 ```
