@@ -13,6 +13,16 @@ var assocRequestsSent = {};
 
 function playWithAPI() {
 
+		sendRequest("getLastBets", {count: 10}, {
+		ifSuccess: function(cats) {
+			process.stdout.write("\nLast bets: " + JSON.stringify(cats))
+		},
+		ifFailed: function(error) {
+			process.stdout.write("\nFailed to get last bets. Reason:" + error);
+		}
+	});
+	
+	/*
 		sendRequest("getBestOdds", {filter: "soccer"}, {
 		ifSuccess: function(cats) {
 			process.stdout.write("\nCurrent best odds: " + JSON.stringify(cats))
@@ -21,7 +31,7 @@ function playWithAPI() {
 			process.stdout.write("\nFailed to get best odds. Reason:" + error);
 		}
 	});
-	
+	*/
 	
 	/*
 	sendRequest("getCategories", null, {
@@ -32,7 +42,7 @@ function playWithAPI() {
 			process.stdout.write("\nFailed to get categories. Reason:" + error);
 		}
 	});
-*/
+	*/
 	/*
 	sendRequest("getChampionships", null, {
 		ifSuccess: function(championships) {
@@ -108,7 +118,7 @@ function sendRequest(command, params, actionForResponse) {
 	content.tag = objectHash.getBase64Hash(request);
 
 	var message = JSON.stringify(['request', content]);
-
+	process.stdout.write(message);
 	var device = require('byteballcore/device.js');
 	assocRequestsSent[content.tag] = actionForResponse;
 	device.sendMessageToDevice(bettingBotDeviceAddress, 'text', message);

@@ -3,6 +3,9 @@
 - [getFeedNames](#getFeedNames)
 - [getActiveOffers](#getActiveOffers)
 - [getActiveBets](#getActiveBets)
+- [getBestOdds](#getBestOdds)
+- [getLastBets](#getLastBets)
+
 
 ## getCategories
 
@@ -459,4 +462,42 @@ Parameters:
 		"odds_2": 2.8
 	}
 }
+```
+
+## getLastBets
+
+Get last bets taken
+
+Parameters:
+- count: number of results to be returned (max 100)
+
+###### Request
+```
+["request", {
+	"command": "getLastBets",
+	"params": {
+		"count": 2
+	},
+	"time_limit": 1529935674,
+	"tag": "r0fmNZpx2YA0mQqs2093oW0fktaocQ9c8gXNG093gtk="
+}]
+```
+
+###### Response
+```
+[{
+	"feed_name": "URUGUAY_RUSSIA_2018-06-25",
+	"homeTeam": "Uruguay",
+	"awayTeam": "Russia",
+	"amount_taker": "1",
+	"amount_maker": "2",
+	"win_condition": "URUGUAY"
+}, {
+	"feed_name": "SAUDIARABIA_EGYPT_2018-06-25",
+	"homeTeam": "Saudi Arabia",
+	"awayTeam": "Egypt",
+	"amount_taker": "1",
+	"amount_maker": "1",
+	"win_condition": "EGYPT"
+}]
 ```
