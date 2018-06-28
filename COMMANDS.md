@@ -356,12 +356,15 @@ Parameters:
 Get best odds available for upcoming fixtures
 
 Parameters:
-- **filter**: categorie for which you want to get best odds, odds for all categories are returned if null
+- **cat**: categorie for which you want to get best odds, odds for all categories are returned if null
 
 Properties returned:
 - **odds_1**: best odds for home team winning
 - **odds_x**: best odds for a draw (false if not applicable)
 - **odds_2**: best odds for away team winning
+- **odds_1_net**: best odds net from fees for home team winning
+- **odds_x_net**: best odds net from fees for a draw (false if not applicable)
+- **odds_2_net**: best odds net from fees for away team winning
 - **offer_feedname**: feedname for which your offer applies
 - **amount_max_set**: the amount max in MB that you are willing to risk for this fixture
 
@@ -370,7 +373,7 @@ Properties returned:
 ["request", {
 	"command": "getBestOdds",
 	"params": {
-		"filter": "soccer"
+		"cat": "soccer"
 	},
 	"time_limit": 1529922786,
 	"tag": "NF1tVuMzTxmohANZj1Cp/3GOzhgj3zOjTxqRVieCjLk="
@@ -383,20 +386,26 @@ Properties returned:
 	"SAUDIARABIA_EGYPT_2018-06-25": {
 		"homeTeam": "Saudi Arabia",
 		"awayTeam": "Egypt",
-		"date": "2018-06-25 14:00:00",
+		"date": "2018-06-25T14:00:00.000Z",
 		"localDay": "2018-06-25T14:00:00.000Z",
 		"odds_1": 5.5,
 		"odds_x": 3.5,
-		"odds_2": 1.8
+		"odds_2": 1.8,
+		"odds_1_net": 5.46,
+		"odds_x_net": 3.475,
+		"odds_2_net": 1.792
 	},
 	"URUGUAY_RUSSIA_2018-06-25": {
 		"homeTeam": "Uruguay",
 		"awayTeam": "Russia",
-		"date": "2018-06-25 14:00:00",
+		"date": "2018-06-25T14:00:00.000Z",
 		"localDay": "2018-06-25T14:00:00.000Z",
 		"odds_1": 2.6,
 		"odds_x": 3,
-		"odds_2": 2.8
+		"odds_2": 2.8,
+		"odds_1_net": 2,584,
+		"odds_x_net": 2.98,
+		"odds_2_net": 2,782
 	}
 }
 ```
@@ -412,7 +421,7 @@ Properties returned:
 
 - **win_condition**: data posted by oracle for which the taker wins the bet
 - **amount_taker**: amount in MB deposited on contract by taker
-- **amount_maker**: amount in MB deposited on contract by maker
+- **amount_maker**: amount in MB deposited on contract by maker minus fees
 
 
 ###### Request

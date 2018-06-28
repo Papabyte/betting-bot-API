@@ -23,15 +23,15 @@ function playWithAPI() {
 	});
 	
 	/*
-		sendRequest("getBestOdds", {filter: "soccer"}, {
+		sendRequest("getBestOdds", {cat:'Baseball'}, {
 		ifSuccess: function(cats) {
 			process.stdout.write("\nCurrent best odds: " + JSON.stringify(cats))
 		},
 		ifFailed: function(error) {
 			process.stdout.write("\nFailed to get best odds. Reason:" + error);
 		}
-	});
-	*/
+	});*/
+	
 	
 	/*
 	sendRequest("getCategories", null, {
@@ -54,7 +54,7 @@ function playWithAPI() {
 	});
 	*/
 	/*
-	sendRequest("getFeedNames", {championship: "NHL"}, {
+	sendRequest("getFeedNames", {cat: "Soccer"}, {
 		ifSuccess: function(feedNames) {
 			process.stdout.write("\nCurrent feed names: " + JSON.stringify(feedNames))
 		},
