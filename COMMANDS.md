@@ -119,8 +119,8 @@ Return all championships available
 Return feed names and information about fixtures for a specified sport or championship.
 
 Parameters:
-- **cat** (optionnal) : filter by sport
-- **championship** (optionnal, has priority over cat): filter by championship
+- **cat** (optional): filter by sport category
+- **championship** (optional, has priority over sport category): filter by championship
 
 ###### Request
 ```
@@ -204,18 +204,18 @@ Parameters:
 Return your active offers.
 
 Parameters:
-- **cat** (optionnal) : filter by sport
-- **championship** (optionnal, has priority over cat): filter by championship
+- **cat** (optional): filter by sport category
+- **championship** (optional, has priority over category): filter by championship
 
 Properties returned:
-- odds_1: your odds for home team winning
-- odds_x: your odds for a draw (false if not applicable)
-- odds_2: your odds for away team winning
-- at_stake_odds_1: amount in MB that you lose for home team winning
-- at_stake_odds_x: amount in MB that you lose for a draw (false if not applicable)
-- at_stake_odds_2: amount in MB that you lose for away team winning
-- offer_feedname: feedname for which your offer applies
-- amount_max_set: the amount max in MB that you are willing to risk for this fixture
+- **odds_1**: your odds for home team winning (without bot fee)
+- **odds_x**: your odds for a draw (without bot fee, false if not applicable)
+- **odds_2**: your odds for away team winning (without bot fee)
+- **at_stake_odds_1**: amount in MB that you lose for home team winning
+- **at_stake_odds_x**: amount in MB that you lose for a draw (false if not applicable)
+- **at_stake_odds_2**: amount in MB that you lose for away team winning
+- **offer_feedname**: feedname for which your offer applies
+- **amount_max_set**: the amount max in MB that you are willing to risk for this fixture
 
 ###### Request
 ```
@@ -356,7 +356,7 @@ Parameters:
 Get best odds available for upcoming fixtures
 
 Parameters:
-- **cat**: categorie for which you want to get best odds, odds for all categories are returned if null
+- **cat**: sport category for which you want to get best odds, odds for all categories are returned if `params` object is null or `cat` parameter is empty string
 
 Properties returned:
 - **odds_1**: best odds for home team winning
@@ -365,8 +365,6 @@ Properties returned:
 - **odds_1_net**: best odds net from fees for home team winning
 - **odds_x_net**: best odds net from fees for a draw (false if not applicable)
 - **odds_2_net**: best odds net from fees for away team winning
-- **offer_feedname**: feedname for which your offer applies
-- **amount_max_set**: the amount max in MB that you are willing to risk for this fixture
 
 ###### Request
 ```
@@ -403,9 +401,9 @@ Properties returned:
 		"odds_1": 2.6,
 		"odds_x": 3,
 		"odds_2": 2.8,
-		"odds_1_net": 2,584,
+		"odds_1_net": 2.584,
 		"odds_x_net": 2.98,
-		"odds_2_net": 2,782
+		"odds_2_net": 2.782
 	}
 }
 ```
