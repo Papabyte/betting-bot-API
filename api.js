@@ -13,7 +13,7 @@ var assocRequestsSent = {};
 
 function playWithAPI() {
 
-		sendRequest("getLastBets", {count: 10}, {
+	sendRequest("getLastBets", {count: 10}, {
 		ifSuccess: function(cats) {
 			process.stdout.write("\nLast bets: " + JSON.stringify(cats))
 		},
@@ -23,7 +23,7 @@ function playWithAPI() {
 	});
 	
 	/*
-		sendRequest("getBestOdds", {cat:'Baseball'}, {
+	sendRequest("getBestOdds", {cat:'Baseball'}, {
 		ifSuccess: function(cats) {
 			process.stdout.write("\nCurrent best odds: " + JSON.stringify(cats))
 		},
