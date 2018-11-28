@@ -145,7 +145,9 @@ Parameters:
 			"feedHomeTeamName": "NEWORLEANSPELICANS",
 			"feedAwayTeamName": "GOLDENSTATEWARRIORS",
 			"date": "2018-05-06T19:30:00.000Z",
-			"localDay": "2018-05-06T00:00:00.000Z"
+			"localDay": "2018-05-06T00:00:00.000Z",
+			"cat": "Basketball",
+			"championship": "NBA"
 		},
 		"UTAHJAZZ_HOUSTONROCKETS_2018-05-06": {
 			"homeTeam": "Utah Jazz",
@@ -153,7 +155,9 @@ Parameters:
 			"feedHomeTeamName": "UTAHJAZZ",
 			"feedAwayTeamName": "HOUSTONROCKETS",
 			"date": "2018-05-07T00:00:00.000Z",
-			"localDay": "2018-05-06T00:00:00.000Z"
+			"localDay": "2018-05-06T00:00:00.000Z",
+			"cat": "Basketball",
+			"championship": "NBA"
 		},
 		"PHILADELPHIA76ERS_BOSTONCELTICS_2018-05-07": {
 			"homeTeam": "Philadelphia 76ers",
@@ -161,7 +165,9 @@ Parameters:
 			"feedHomeTeamName": "PHILADELPHIA76ERS",
 			"feedAwayTeamName": "BOSTONCELTICS",
 			"date": "2018-05-07T22:00:00.000Z",
-			"localDay": "2018-05-07T00:00:00.000Z"
+			"localDay": "2018-05-07T00:00:00.000Z",
+			"cat": "Basketball",
+			"championship": "NBA"
 		},
 		"CLEVELANDCAVALIERS_TORONTORAPTORS_2018-05-07": {
 			"homeTeam": "Cleveland Cavaliers",
@@ -169,7 +175,9 @@ Parameters:
 			"feedHomeTeamName": "CLEVELANDCAVALIERS",
 			"feedAwayTeamName": "TORONTORAPTORS",
 			"date": "2018-05-08T00:30:00.000Z",
-			"localDay": "2018-05-07T00:00:00.000Z"
+			"localDay": "2018-05-07T00:00:00.000Z",
+			"cat": "Basketball",
+			"championship": "NBA"
 		},
 		"HOUSTONROCKETS_UTAHJAZZ_2018-05-08": {
 			"homeTeam": "Houston Rockets",
@@ -177,7 +185,9 @@ Parameters:
 			"feedHomeTeamName": "HOUSTONROCKETS",
 			"feedAwayTeamName": "UTAHJAZZ",
 			"date": "2018-05-09T00:00:00.000Z",
-			"localDay": "2018-05-08T00:00:00.000Z"
+			"localDay": "2018-05-08T00:00:00.000Z",
+			"cat": "Basketball",
+			"championship": "NBA"
 		},
 		"GOLDENSTATEWARRIORS_NEWORLEANSPELICANS_2018-05-08": {
 			"homeTeam": "Golden State Warriors",
@@ -185,7 +195,9 @@ Parameters:
 			"feedHomeTeamName": "GOLDENSTATEWARRIORS",
 			"feedAwayTeamName": "NEWORLEANSPELICANS",
 			"date": "2018-05-09T02:30:00.000Z",
-			"localDay": "2018-05-08T00:00:00.000Z"
+			"localDay": "2018-05-08T00:00:00.000Z",
+			"cat": "Basketball",
+			"championship": "NBA"
 		},
 		"BOSTONCELTICS_PHILADELPHIA76ERS_2018-05-09": {
 			"homeTeam": "Boston Celtics",
@@ -193,7 +205,9 @@ Parameters:
 			"feedHomeTeamName": "BOSTONCELTICS",
 			"feedAwayTeamName": "PHILADELPHIA76ERS",
 			"date": "2018-05-09T22:00:00.000Z",
-			"localDay": "2018-05-09T00:00:00.000Z"
+			"localDay": "2018-05-09T00:00:00.000Z",
+			"cat": "Basketball",
+			"championship": "NBA"
 		}
 	},
 	"tag": "s+y60IHpqDunZFufMHqQBmz2Vh9JdTXnt/1b4+Y0d3k="
@@ -386,6 +400,8 @@ Properties returned:
 		"awayTeam": "Egypt",
 		"date": "2018-06-25T14:00:00.000Z",
 		"localDay": "2018-06-25T14:00:00.000Z",
+		"cat": "Soccer",
+		"championship": "WC",
 		"odds_1": 5.5,
 		"odds_x": 3.5,
 		"odds_2": 1.8,
@@ -398,6 +414,8 @@ Properties returned:
 		"awayTeam": "Russia",
 		"date": "2018-06-25T14:00:00.000Z",
 		"localDay": "2018-06-25T14:00:00.000Z",
+		"cat": "Soccer",
+		"championship": "WC",
 		"odds_1": 2.6,
 		"odds_x": 3,
 		"odds_2": 2.8,
@@ -440,6 +458,8 @@ Properties returned:
 	"feed_name": "URUGUAY_RUSSIA_2018-06-25",
 	"homeTeam": "Uruguay",
 	"awayTeam": "Russia",
+	"cat": "Soccer",
+	"championship": "WC",
 	"amount_taker": "1",
 	"amount_maker": "2",
 	"win_condition": "URUGUAY"
@@ -447,6 +467,8 @@ Properties returned:
 	"feed_name": "SAUDIARABIA_EGYPT_2018-06-25",
 	"homeTeam": "Saudi Arabia",
 	"awayTeam": "Egypt",
+	"cat": "Soccer",
+	"championship": "WC",
 	"amount_taker": "1",
 	"amount_maker": "1",
 	"win_condition": "EGYPT"
